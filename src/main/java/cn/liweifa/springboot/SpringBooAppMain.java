@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by josli on 17/10/17.
  */
-@SpringBootApplication
+@SpringBootApplication //启用 springboot 注解功能
 @RestController
 public class SpringBooAppMain {
 
