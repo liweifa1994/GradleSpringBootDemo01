@@ -29,7 +29,7 @@
                 <li class="list-group-item" th:each="person:${personList}">
                     <span th:text="${person.name}"> no person</span>
                     <span th:text="${person.age}"> no person</span>
-                    <!--<button class="button" th:onclick="'getName(\''+${person.name}+'\');'">getName</button>-->
+                    <button class="button" th:onclick="'getName(\''+${person.name}+'\');'">getName</button>
                 </li>
             </ul>
         </div>
@@ -38,8 +38,9 @@
 <script th:inline="javascript">
     var single = [[${person}]];
     console.log(single.name);
+    alert(single.name);
     function getName(name) {
-        console.log(name);
+        alert(name);
     }
 </script>
 </body>
