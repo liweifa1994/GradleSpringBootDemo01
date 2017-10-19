@@ -17,10 +17,12 @@ buildscript {
     }
 }
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    compile group: 'cn.liweifa', name:'springboothelloworld',version:'1.0-SNAPSHOT'
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }

@@ -1,2 +1,4 @@
 rootProject.name = 'GradleSpringBootDemo01'
+include 'demo01'
+include 'jpa'
 
